@@ -2,15 +2,18 @@
   position: absolute;
   z-index: 0;
   inset: 0;
+  width: min(1160px, calc(100% - 112px));
+  margin-inline: auto;
   pointer-events: none;
   user-select: none;
 }
+.illustrated-section.page-width > .floating-props { width: 100%; }
 .floating-prop {
   position: absolute;
   width: var(--prop-size, 54px);
   height: auto;
   max-width: none;
-  opacity: .78;
+  opacity: .93;
   filter: drop-shadow(0 5px 5px #5c6c4320);
   transform: rotate(var(--prop-tilt, -5deg));
   animation: medical-prop-drift var(--prop-period, 8s) ease-in-out var(--prop-delay, 0s) infinite both;
@@ -18,7 +21,7 @@
 }
 @keyframes medical-prop-drift {
   0%,100% { transform: translate3d(0, 0, 0) rotate(var(--prop-tilt, -5deg)); }
-  50% { transform: translate3d(var(--prop-drift, 3px), -9px, 0) rotate(calc(var(--prop-tilt, -5deg) + 3deg)); }
+  50% { transform: translate3d(var(--prop-drift, 2px), -6px, 0) rotate(calc(var(--prop-tilt, -5deg) + 2deg)); }
 }
 html[data-motion-state="on"][data-page-visible="true"] [data-visual-inview="true"] .floating-prop { animation-play-state: running; }
 html[data-motion-state="on"][data-page-visible="true"] .has-entered .section-heading,
@@ -26,23 +29,24 @@ html[data-motion-state="on"][data-page-visible="true"] .has-entered .additional-
 html[data-motion-state="on"][data-page-visible="true"] .has-entered .about-copy,
 html[data-motion-state="on"][data-page-visible="true"] .has-entered .hero-copy { animation: profile-section-arrive .65s ease both; }
 @keyframes profile-section-arrive { from { opacity: .45; transform: translate3d(0, 12px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
-.floating-about-one { right: 2%; top: 30px; --prop-size: 51px; --prop-period: 8.5s; }
-.floating-about-two { left: 26%; bottom: 24px; --prop-size: 47px; --prop-tilt: 7deg; --prop-delay: -3s; }
-.floating-experience-one { right: 7%; top: 27px; --prop-size: 53px; --prop-delay: -2s; }
-.floating-experience-two { right: 3%; bottom: 21px; --prop-size: 46px; --prop-tilt: 7deg; --prop-period: 9.5s; }
-.floating-education-one { right: 3%; top: 29px; --prop-size: 56px; --prop-delay: -4s; }
-.floating-education-two { left: 44%; bottom: 21px; --prop-size: 49px; --prop-tilt: 6deg; --prop-period: 10s; }
-.floating-research-one { right: 7%; top: 25px; --prop-size: 52px; --prop-delay: -5s; }
-.floating-research-two { left: 5%; bottom: 19px; --prop-size: 45px; --prop-tilt: 7deg; --prop-period: 9s; }
-.floating-additional-one { left: 29%; top: 23px; --prop-size: 52px; --prop-period: 9s; }
-.floating-additional-two { left: 16%; bottom: 17px; --prop-size: 47px; --prop-tilt: 6deg; --prop-delay: -4s; }
+.floating-about-one { left: 60%; top: 43px; --prop-size: 51px; --prop-period: 8.5s; }
+.floating-about-two { left: calc(60% + 58px); top: 55px; --prop-size: 47px; --prop-tilt: 7deg; --prop-delay: -3s; }
+.floating-experience-one { left: 49%; top: 42px; --prop-size: 53px; --prop-delay: -2s; }
+.floating-experience-two { left: calc(49% + 61px); top: 55px; --prop-size: 46px; --prop-tilt: 7deg; --prop-period: 9.5s; }
+.floating-education-one { left: 49%; top: 41px; --prop-size: 56px; --prop-delay: -4s; }
+.floating-education-two { left: calc(49% + 62px); top: 54px; --prop-size: 49px; --prop-tilt: 6deg; --prop-period: 10s; }
+.floating-research-one { left: 49%; top: 41px; --prop-size: 52px; --prop-delay: -5s; }
+.floating-research-two { left: calc(49% + 60px); top: 55px; --prop-size: 45px; --prop-tilt: 7deg; --prop-period: 9s; }
+.floating-additional-one { left: 23%; top: 29px; --prop-size: 52px; --prop-period: 9s; }
+.floating-additional-two { left: calc(23% + 58px); top: 41px; --prop-size: 47px; --prop-tilt: 6deg; --prop-delay: -4s; }
+@media(max-width:1050px) {
+  .illustrated-section > .floating-props { width: calc(100% - 80px); }
+}
 @media(max-width:760px) {
-  .floating-prop { width: calc(var(--prop-size, 54px) * .7); opacity: .65; }
-  .floating-about-one, .floating-experience-one, .floating-education-one, .floating-research-one { top: 12px; right: 4px; }
-  .floating-about-two { left: auto; right: 8%; bottom: 8px; }
-  .floating-experience-two, .floating-education-two, .floating-research-two { left: 10px; right: auto; bottom: 7px; }
-  .floating-additional-one { left: auto; right: 4px; top: 11px; }
-  .floating-additional-two { left: 10px; bottom: 5px; }
+  .illustrated-section > .floating-props { width: calc(100% - 44px); }
+  .floating-prop { width: calc(var(--prop-size, 54px) * .7); opacity: .82; }
+  .floating-about-one, .floating-experience-one, .floating-education-one, .floating-research-one, .floating-additional-one { left: auto; top: 13px; right: 72px; }
+  .floating-about-two, .floating-experience-two, .floating-education-two, .floating-research-two, .floating-additional-two { left: auto; right: 30px; top: 23px; }
 }
 html[data-motion-state="off"] .floating-prop { animation: none; }
 @media(prefers-reduced-motion:reduce) {
