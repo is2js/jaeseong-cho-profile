@@ -1,6 +1,7 @@
 import { existsSync, readFileSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, relative, isAbsolute, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkVisualAssets } from './visual-assets.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const dist = join(root, 'dist');
@@ -35,6 +36,7 @@ function inspectFiles(directory) {
 }
 
 try {
+  checkVisualAssets(root, dist);
   const html = readFileSync(join(dist, 'index.html'), 'utf8');
   if (!/<html\b[^>]*lang=["']ko["']/.test(html)) throw new Error('문서 언어 설정을 확인해 주세요.');
   if (/\/@vite\/client/.test(html)) throw new Error('개발 HTML이 배포 결과에 포함되었습니다.');

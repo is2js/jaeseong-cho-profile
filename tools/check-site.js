@@ -1,6 +1,7 @@
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { checkVisualAssets } from './visual-assets.js';
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const excluded = new Set(['node_modules', 'dist', '.git', 'private', 'artifacts']);
@@ -51,7 +52,8 @@ try {
     const bytes = readFileSync(path);
     if (bytes.length < 24 || bytes.subarray(0, 8).toString('hex') !== '89504e470d0a1a0a') throw new Error(`PNG 사진 파일을 확인해 주세요: ${name}`);
   }
-  console.log('공개 프로필 JSON·사진·원본 문서 제외 검사 통과');
+  const visuals = checkVisualAssets(root);
+  console.log(`공개 프로필·사진·원본 제외·의료 모션 ${visuals.motions}종/${visuals.frames}프레임·배경 ${visuals.backgrounds}종 검사 통과`);
 } catch (error) {
   console.error(error.message);
   process.exitCode = 1;

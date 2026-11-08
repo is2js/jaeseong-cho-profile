@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "generator": "built-in image_gen",
+  "createdOn": "2026-11-09",
+  "purpose": "한의사 프로필 섹션의 은은한 장식 배경",
+  "style": "cream / sage / warm gold watercolor medical still-life",
+  "references": [
+    {
+      "file": "assets/rpg/skills/icons/lk-clinic/motifs/004.png",
+      "motif": "침",
+      "sha256": "3caad86cb50606068cc46deace104465348f99a2bc8b73b2ecdafea95f255149"
+    },
+    {
+      "file": "assets/rpg/skills/icons/lk-clinic/motifs/007.png",
+      "motif": "추나",
+      "sha256": "b479adbe753cdf679535d60c6b0dcefae0df743a4148dbc5ce32d91e8c110669"
+    }
+  ],
+  "assets": [
+    {
+      "id": "about",
+      "file": "about.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 140940,
+      "sha256": "b24dbc843417a8c6578dc463621d8c2eceffbda7e6c4aea00632f567cceafb8c",
+      "sourceSha256": "59e70ac9c1122fcc32c2cc533b85b686c65f0e75fab155cb8efe078c241708cd",
+      "processing": "Uniform resize to 768×512 and WebP encoding at quality 90; generated alpha preserved; no object repainting",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: a transparent raster illustration used as a quiet decorative background at the edge of a Korean medicine doctor's personal profile website. Create one elegant casual medical still-life motif, not a UI and not an icon button. Style: refined hand-painted watercolor and fine colored-pencil outlines, softly dimensional little objects, light paper-like surfaces, delicate warm antique Korean medicine tool details inspired by RPG medical skill motifs. A restrained coherent family of cream #f6f0e4, sage green #617d68, pale warm gold, and small muted gray metal highlights. Genuinely transparent alpha background. Objects grouped loosely with generous transparent negative space, about 70% frame occupied; no entire paper/card background. No text, words, numbers, labels, people, hands, bodies, faces, patients, logos, border, frame, medical cross, neon glow, watermark, or opaque backdrop. Objects fully in frame, clean silhouette; preserve readable object forms even at small web scale. Light gentle mood; no blood or invasive treatment scene.\nSubject: a small traditional acupuncture needle case lying diagonally with precisely three slender silver acupuncture needles with subtly golden coiled handles, one or two soft mugwort sprigs and a folded cream linen cloth. Carefully separated needles so their fine metal shafts are recognizable. Elegant sparse diagonal still life, near top-down three-quarter view."
+    },
+    {
+      "id": "experience",
+      "file": "experience.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 86850,
+      "sha256": "67aea990d3c4547ab54127bd9d06d08acbcc6c81ea0f733341212af0dbe145cb",
+      "sourceSha256": "85c3c59ea120757e47b2cb17e27839e713f23b9c85520d871e713e19dd7db1b9",
+      "processing": "Uniform resize to 768×512 and WebP encoding at quality 90; generated alpha preserved; no object repainting",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: a transparent raster illustration used as a quiet decorative background at the edge of a Korean medicine doctor's personal profile website. Create one elegant casual medical still-life motif, not a UI and not an icon button. Style: refined hand-painted watercolor and fine colored-pencil outlines, softly dimensional little objects, light paper-like surfaces, delicate warm antique Korean medicine tool details inspired by RPG medical skill motifs. A restrained coherent family of cream #f6f0e4, sage green #617d68, pale warm gold, and small muted gray metal highlights. Genuinely transparent alpha background. Objects grouped loosely with generous transparent negative space, about 70% frame occupied; no entire paper/card background. No text, words, numbers, labels, people, hands, bodies, faces, patients, logos, border, frame, medical cross, neon glow, watermark, or opaque backdrop. Objects fully in frame, clean silhouette; preserve readable object forms even at small web scale. Light gentle mood; no blood or invasive treatment scene.\nSubject: a compact sage-green upholstered chuna treatment table seen in a gentle three-quarter isometric view, a cream cylindrical support bolster and a small blank folded patient chart beside it. No people, no hands, no patient. The table has simple precise sturdy legs, friendly softly rounded upholstery and understated gold details. A sparse therapeutic clinic still life."
+    },
+    {
+      "id": "education",
+      "file": "education.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 85004,
+      "sha256": "075eb104c6d70bce0fd99d2a2bf7d3bc19d6d963ee2dedbdc0b772a2332b62dd",
+      "sourceSha256": "e69213a730ec9bd069e335c841b754f88ec46594775e713e4292b384c6b81bef",
+      "processing": "Uniform resize to 768×512 and WebP encoding at quality 90; generated alpha preserved; no object repainting",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: a transparent raster illustration used as a quiet decorative background at the edge of a Korean medicine doctor's personal profile website. Create one elegant casual medical still-life motif, not a UI and not an icon button. Style: refined hand-painted watercolor and fine colored-pencil outlines, softly dimensional little objects, light paper-like surfaces, delicate warm antique Korean medicine tool details inspired by RPG medical skill motifs. A restrained coherent family of cream #f6f0e4, sage green #617d68, pale warm gold, and small muted gray metal highlights. Genuinely transparent alpha background. Objects grouped loosely with generous transparent negative space, about 70% frame occupied; no entire paper/card background. No text, words, numbers, labels, people, hands, bodies, faces, patients, logos, border, frame, medical cross, neon glow, watermark, or opaque backdrop. Objects fully in frame, clean silhouette; preserve readable object forms even at small web scale. Light gentle mood; no blood or invasive treatment scene.\nSubject: two slim neatly stacked cream and sage medical study books, one open blank notebook with faint unlettered line rules, a slender mechanical pencil, and a small acupuncture needle case with two fine silver needles. Sparse tidy composition; one tiny mugwort leaf, no identifiable writing or symbols. Gentle three-quarter overhead angle."
+    },
+    {
+      "id": "research",
+      "file": "research.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 150288,
+      "sha256": "1263292929c47bb5e2cf17e8ce93d2df5ae1be59ed38904c87d8edf1212aa69d",
+      "sourceSha256": "726e71576ecf5457d05c58fc0125ea06658b48308ce1d3c4e24fd098fcf7079b",
+      "processing": "Uniform resize to 768×512 and WebP encoding at quality 90; generated alpha preserved; no object repainting",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: a transparent raster illustration used as a quiet decorative background at the edge of a Korean medicine doctor's personal profile website. Create one elegant casual medical still-life motif, not a UI and not an icon button. Style: refined hand-painted watercolor and fine colored-pencil outlines, softly dimensional little objects, light paper-like surfaces, delicate warm antique Korean medicine tool details inspired by RPG medical skill motifs. A restrained coherent family of cream #f6f0e4, sage green #617d68, pale warm gold, and small muted gray metal highlights. Genuinely transparent alpha background. Objects grouped loosely with generous transparent negative space, about 70% frame occupied; no entire paper/card background. No text, words, numbers, labels, people, hands, bodies, faces, patients, logos, border, frame, medical cross, neon glow, watermark, or opaque backdrop. Objects fully in frame, clean silhouette; preserve readable object forms even at small web scale. Light gentle mood; no blood or invasive treatment scene.\nSubject: a carefully illustrated handheld ultrasound linear probe with a small curled cable, a pale ceramic knee joint teaching model standing on a small wooden base, and two blank ivory research papers with a few faint unlabelled gray graph lines. A sparse medical research still life, gentle three-quarter overhead angle. Distinct clinically plausible instrument silhouettes, no person or human tissue."
+    },
+    {
+      "id": "additional",
+      "file": "additional.webp",
+      "width": 768,
+      "height": 512,
+      "bytes": 111958,
+      "sha256": "02206b83e5e06abc551c420f5f553b58b85276e7af8b990846bfc92429648940",
+      "sourceSha256": "f099cef246bb4b800b401738924da2735c068c35f062dae327529cf93b7d29f5",
+      "processing": "Uniform resize to 768×512 and WebP encoding at quality 90; generated alpha preserved; no object repainting",
+      "transparent": true,
+      "prompt": "Use case: stylized-concept. Asset type: a transparent raster illustration used as a quiet decorative background at the edge of a Korean medicine doctor's personal profile website. Create one elegant casual medical still-life motif, not a UI and not an icon button. Style: refined hand-painted watercolor and fine colored-pencil outlines, softly dimensional little objects, light paper-like surfaces, delicate warm antique Korean medicine tool details inspired by RPG medical skill motifs. A restrained coherent family of cream #f6f0e4, sage green #617d68, pale warm gold, and small muted gray metal highlights. Genuinely transparent alpha background. Objects grouped loosely with generous transparent negative space, about 70% frame occupied; no entire paper/card background. No text, words, numbers, labels, people, hands, bodies, faces, patients, logos, border, frame, medical cross, neon glow, watermark, or opaque backdrop. Objects fully in frame, clean silhouette; preserve readable object forms even at small web scale. Light gentle mood; no blood or invasive treatment scene.\nSubject: a slim sage folio notebook beside two cream paper study sheets with only faint abstract unlabelled chart marks, a wooden pencil, a small pale-gold paperclip, and a graceful mugwort sprig. A balanced quiet still-life representing continuing learning and analytical work, without electronics or text. Gentle three-quarter overhead angle."
+    }
+  ],
+  "referenceUse": "PVP medical icon motifs were visually inspected for conceptual reference; no original game pixels were copied into these generated backgrounds."
+}

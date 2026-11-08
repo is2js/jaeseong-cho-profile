@@ -1,0 +1,438 @@
+{
+  "schemaVersion": 1,
+  "sourceProject": "pvp",
+  "sourceRevision": "ac9eef0d4aa9214872fc96d73a6fa33225a025e8",
+  "release": "lk-medical-3d-look-20261018-r3",
+  "bodyManifest": {
+    "path": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/animation.json",
+    "sha256": "d2aa01d15d99d0380a03a914d81394497bd375f3d8c44d9a9b8cb9e6cc9c06be"
+  },
+  "appearanceRouting": {
+    "path": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/appearance-routing.json",
+    "sha256": "e75c910f6325750d48ed05dbcea43926ac79832d34814fa5ba31733bb68ac816"
+  },
+  "weaponManifest": {
+    "path": "assets/characters/paper-doll/weapons/animation.json",
+    "sha256": "8564d6818720ecc6a46a75ec6477469b5d6cc3327cbf4219c5baefb2030910da"
+  },
+  "transforms": [
+    "SE frames only",
+    "base mint appearance from source routing",
+    "uniform 256 to 128px Lanczos resampling",
+    "no per-frame bounding-box or anatomy edits",
+    "needle overlay composed at original manifest placements"
+  ],
+  "actions": {
+    "greet": {
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_00.png",
+          "bodySha256": "221f08dcf1371e231bbe1c685252396c130377033df617a846e85cb23872d14f"
+        },
+        {
+          "frame": 1,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_01.png",
+          "bodySha256": "d22327a7dbdb8e9b75aa3fa01c098db6d1608dbd5c4a3cdc01756756485c7e90"
+        },
+        {
+          "frame": 2,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_02.png",
+          "bodySha256": "2afccdc5329c2e3f9514df03fd3ab6be5ab19d5d44ab6add8a99ed6bbce1b423"
+        },
+        {
+          "frame": 3,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_03.png",
+          "bodySha256": "028eddabca9a9d69f4aa5ad49750f44a542ed0e1c35e64a9f73c409622859bfc"
+        },
+        {
+          "frame": 4,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_04.png",
+          "bodySha256": "4c7516af76df19f8e699e9b7c85400b0cd8e4d5e1e8b2d4d248bdf2fc7fcdb11"
+        },
+        {
+          "frame": 5,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_05.png",
+          "bodySha256": "838ee61fcc28e85b866210e1b3fb38b1139f0ddfea4d15ecea34497baac8d520"
+        },
+        {
+          "frame": 6,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_06.png",
+          "bodySha256": "8ed9bdc6610dba49889e128e00ecad9c7bd050cccff5e8b01a36c6c1ec88cd69"
+        },
+        {
+          "frame": 7,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_07.png",
+          "bodySha256": "d4023335dd5ae288e565e85abf4cc446b09a71c7609fc0e514c65808484a93ef"
+        },
+        {
+          "frame": 8,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_08.png",
+          "bodySha256": "a786280a550175a8209a4414d31906f901a1076c75fbbdee61148d8f05b3c241"
+        },
+        {
+          "frame": 9,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_09.png",
+          "bodySha256": "8a463aa1955e208a42334e294a64886cbd3097ee341b919efc5ce7b50fa34c7a"
+        },
+        {
+          "frame": 10,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_10.png",
+          "bodySha256": "1d11ea5895b365ca33046896462db1b087a5bd36fd57032212e98af40775a678"
+        },
+        {
+          "frame": 11,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/greeting/wave/se_11.png",
+          "bodySha256": "d7c9059e9b5635775bc590a3df3c3c237195609f2e22a04102683fe26f01916e"
+        }
+      ],
+      "output": {
+        "sheet": "greet.png",
+        "sha256": "40bed33c439ce1db5d3aebe0de676b8b7cc8640de336a32d4a9f5b19dc91911a",
+        "bytes": 137905
+      }
+    },
+    "chuna": {
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_00.png",
+          "bodySha256": "3e38805fbf8c0cccc5f4cef4a1d49f11eaaaeba2aab6296aabdbe06bcdc406b7"
+        },
+        {
+          "frame": 1,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_01.png",
+          "bodySha256": "2782fa68406cf8d2a8b3b8b15c1b5901e32523bdc8581fea4c60d49972193943"
+        },
+        {
+          "frame": 2,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_02.png",
+          "bodySha256": "94a93f4db47f3276b456abe6e3d5217d718913016c0459bea74adb3f35ca7808"
+        },
+        {
+          "frame": 3,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_03.png",
+          "bodySha256": "685ff3ba0bf53d29bc6e447be51cafdbc7af83ab00f2ce6c7e1ded6b1779081d"
+        },
+        {
+          "frame": 4,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_04.png",
+          "bodySha256": "178c76caa35dd638c2d5bca03f0e5da1131358f0d4cc9b83bdd8111a3e328e83"
+        },
+        {
+          "frame": 5,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_05.png",
+          "bodySha256": "fa3eea85db20f35e9c9cce1e42cb97a966a6a645c3f07798961805d23196b948"
+        },
+        {
+          "frame": 6,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_06.png",
+          "bodySha256": "0a5362982f42d13cd3b79c9f2fae26e653170f5d442b775f27bee513f47c63c1"
+        },
+        {
+          "frame": 7,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_07.png",
+          "bodySha256": "00378311a854635f35a72df972c54f141e025989097f520702cfd51983c7d003"
+        },
+        {
+          "frame": 8,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_08.png",
+          "bodySha256": "3f959d583fc9888d1710b06bf96862ad29bba3589b0cdc14864d043e8d82257c"
+        },
+        {
+          "frame": 9,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_09.png",
+          "bodySha256": "25fe2e6de1846b1b3b0d7eb746a44a2bb8cec0188c94499b4fb159a67343179f"
+        },
+        {
+          "frame": 10,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_10.png",
+          "bodySha256": "efaa9fee650403cedd6685a1d94f4d07a5585a3408f965c79cadb28d25cdf314"
+        },
+        {
+          "frame": 11,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/chuna/se_11.png",
+          "bodySha256": "56fbd77bd634324388e90fdbed359642c126db45550fef17aa546735d3102df2"
+        }
+      ],
+      "output": {
+        "sheet": "chuna.png",
+        "sha256": "4a4657798cc6c0f67ecd124c33b950d48d5925b5df72ef156e4e77794d10a487",
+        "bytes": 131748
+      }
+    },
+    "acupuncture": {
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_00.png",
+          "bodySha256": "02c96e29d323490d5c8e539c93b2df63b50fcd6621e0bae755e43902073beff6",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_00.png",
+          "toolSha256": "3371d8ec21d907a889d6d24ad8bb3eca4ad1c723536af15336932db3d2839e20",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 1,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_01.png",
+          "bodySha256": "7f3b46ede52e0f0d0db00f5dcb8c430f7eafad941fa1a5e0bb5e0e75d1735e17",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_01.png",
+          "toolSha256": "03dbabd6de106238f2a1e3bb2c6109b4c762ede675cea6536d17e6a43d22acb3",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 2,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_02.png",
+          "bodySha256": "45d619575282088524bc84efa1560fb864b661acc88b722c83ca03bc186d5cb5",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_02.png",
+          "toolSha256": "342fd8c640975f3cfe94f61322099d6f33e64669d7905c6bd6989a7ec7f97a7d",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 3,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_03.png",
+          "bodySha256": "1c2a15a566cb4279938e0c6dccd086e31d001483ad8d389afad7afc1d4298139",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_03.png",
+          "toolSha256": "350506563f7c60909561ff5184d64d4d261d06e40b660cfd5daf910d26661a60",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 4,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_04.png",
+          "bodySha256": "1d74982be45816df0cc3b9f1470d4b4c7a0196c292d6a57850f09e7e9a1df96e",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_04.png",
+          "toolSha256": "a78a13353e7f37e41286a7ee786370e84bd391974d2d79066b8f1673677ad284",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 5,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_05.png",
+          "bodySha256": "2648761c47129adee4878a5f9607be086739a60d5128a03db011918d0f8bcdb3",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_05.png",
+          "toolSha256": "72584b3ce3a56861719c79697bf5c33cbefdc54dcd676f54b59d522aeec6706d",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 6,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_06.png",
+          "bodySha256": "5272f9fd8693f3e13c15e2ece0253e03113cb830965bbbb9d884a47c974fa999",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_06.png",
+          "toolSha256": "3fb9a437018ef93c74a3b3dcc4d0cac1390a8e2bc1cc91c748e462db501e78cc",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 7,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_07.png",
+          "bodySha256": "b5157a1394952207cb5254ca00404171ee63e93d55b3f442b6c8587f3a67b90d",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_07.png",
+          "toolSha256": "472cbbfb8504983b04344a2309225b31bf29f0fdf21e8eb7e576818b5b20e1f9",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 8,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_08.png",
+          "bodySha256": "d10874c469189aed837cc32159d68d4a2a759aadcd59868077104faa37d8e3da",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_08.png",
+          "toolSha256": "b3d8480dd6000096a60912d7f562ea24db16daa4b899e429021d0cdb15e94e5b",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 9,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_09.png",
+          "bodySha256": "138afafc36cf294a96f14f42c316e36acde5c5eca48061f30a1f2b69ca4f86b7",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_09.png",
+          "toolSha256": "c6bf93c1b414544ea5deabf4ed4f46bf6942c7931d7a2b6f930a9e20bbb717f2",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 10,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_10.png",
+          "bodySha256": "242b267db038ab363f4361266de42a81fbe11b394e718a5888dcba3857248545",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_10.png",
+          "toolSha256": "28ce85117d270e1faf795afba1822ec3f20a8a6ed6091011b3833940b277c726",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        },
+        {
+          "frame": 11,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/needle2/se_11.png",
+          "bodySha256": "092b2d27145de05aed72b39e913d0e89ce4a5b06bde95e83760430772a45d7e2",
+          "tool": "assets/characters/paper-doll/weapons/frames/identity-combat-care-20260912-r1/100/clinic-needle/se_11.png",
+          "toolSha256": "d9c727e74b5cb6f4b969bed73367f6474818d71aa92d4efe0d3ef7467e4242e4",
+          "placement": {
+            "x": 0,
+            "y": 0,
+            "rotationDeg": 0,
+            "layer": "front"
+          }
+        }
+      ],
+      "output": {
+        "sheet": "acupuncture.png",
+        "sha256": "7d1ba7d2b64d49451ac8d7989eac8a5804e5e8b0d2d3649a52603f52b9a0b88e",
+        "bytes": 129741
+      }
+    },
+    "examination": {
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_00.png",
+          "bodySha256": "363bcd5e8657002ae0433efb9e6839196cab690d7a1124236950f0535cb3ad2a"
+        },
+        {
+          "frame": 1,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_01.png",
+          "bodySha256": "702aaae0482ff6e6c8bb319fedc5fecab69449994fdaf884a7d6cff67d040a5b"
+        },
+        {
+          "frame": 2,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_02.png",
+          "bodySha256": "7418816f8ecbe483f1ecf77fb98fea4c2b6fee6cde9b1e43fdacb17a00a248e4"
+        },
+        {
+          "frame": 3,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_03.png",
+          "bodySha256": "dc0056f3201c6ab391935c8f7378354497d2123d6fbfbd50c59f5f5068268766"
+        },
+        {
+          "frame": 4,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_04.png",
+          "bodySha256": "c101fe53d2ee9e5fd676225fd7b5415e8d5c0911b4fb30090b77fe897a32afa9"
+        },
+        {
+          "frame": 5,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_05.png",
+          "bodySha256": "5b26911002b78d117eabddf732b11779fef321d7c895f6593e358f44f5c656e2"
+        },
+        {
+          "frame": 6,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_06.png",
+          "bodySha256": "2c37de79e0fa79cc7b643810cecccba95d0fcfd34c0e55d9d3fa1b954bd2a304"
+        },
+        {
+          "frame": 7,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_07.png",
+          "bodySha256": "eb9a1b9a5dab1756742362eff2fa04062259c188753c08b25f2de40eb1b8ed1d"
+        },
+        {
+          "frame": 8,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_08.png",
+          "bodySha256": "6a23940556590e10f8fef138d8f7dc0dd4dad5eb6b822f6fb6265fd1acb4bbed"
+        },
+        {
+          "frame": 9,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_09.png",
+          "bodySha256": "ff8c21e5c2580be81de7173aa6116daedfca2314e324cdc83e0020bfc09d717f"
+        },
+        {
+          "frame": 10,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_10.png",
+          "bodySha256": "0a3c6ef30f5005ea7fa1bb143e676445bab1a0071c9d9532e88ce6bef5bf7c4f"
+        },
+        {
+          "frame": 11,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/medical/physical_exam/se_11.png",
+          "bodySha256": "e5fb9ad7ef1ce31a2eafd9ced12ae012e1b1c0826b4d16851250b4c2470071f6"
+        }
+      ],
+      "output": {
+        "sheet": "examination.png",
+        "sha256": "884b3e0557bcb1d41f44b022d036f04f88c6628ed3017d953096017238efadf0",
+        "bytes": 115999
+      }
+    },
+    "walk": {
+      "sourceFrames": [
+        {
+          "frame": 0,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/walk/normal/se_00.png",
+          "bodySha256": "6a7155987fa5d6843889ea34575fc4b83c90c977f4aa900166f537e683a3d680"
+        },
+        {
+          "frame": 1,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/walk/normal/se_01.png",
+          "bodySha256": "e7ff454cfe0a39d391d731fb3133b8128183d28f1852578da83dec8ee1f0d0d8"
+        },
+        {
+          "frame": 2,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/walk/normal/se_02.png",
+          "bodySha256": "7e81c9e393563f778d2473440db8ea4bea43edb95e293a64292fbedc2d8f8df9"
+        },
+        {
+          "frame": 3,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/walk/normal/se_03.png",
+          "bodySha256": "bf93298200c46f0eaac831ca7599ff9eb40f4f10cd82f80eeb33fbc655f588fb"
+        },
+        {
+          "frame": 4,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/walk/normal/se_04.png",
+          "bodySha256": "59e44b2ef09aff6a4c8fa4b3591ca8313d6d8115bfddee68baa9cbc5ef709bd1"
+        },
+        {
+          "frame": 5,
+          "body": "assets/characters/3d-candidates/lk-medical-3d-look-20261018-r3/300/walk/normal/se_05.png",
+          "bodySha256": "2c4be43c675e94e2f09ea2da9899baebef71d81655b8b553ac1f5075d955fc43"
+        }
+      ],
+      "output": {
+        "sheet": "walk.png",
+        "sha256": "6f61ebafe7228fc52ac31457fd2f8570c1c049b6ef602bae9f6c2e9485193d36",
+        "bytes": 54796
+      }
+    }
+  }
+}

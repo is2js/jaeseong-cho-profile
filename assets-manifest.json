@@ -23,6 +23,114 @@
       "processing": "얼굴 영역 기술적 크롭 및 192×192 축소 · 인물 재생성 없음",
       "bytes": 37271,
       "sha256": "fb35a33e6be21468bfead3163bacb34c2acab2b7dc564b90dc4a0ea4d6f16be5"
+    },
+    {
+      "path": "public/assets/section-art/about.webp",
+      "source": "built-in imagegen · PVP 의료 도구 모티프",
+      "bytes": 140940,
+      "sha256": "b24dbc843417a8c6578dc463621d8c2eceffbda7e6c4aea00632f567cceafb8c"
+    },
+    {
+      "path": "public/assets/section-art/additional.webp",
+      "source": "built-in imagegen · PVP 의료 도구 모티프",
+      "bytes": 111958,
+      "sha256": "02206b83e5e06abc551c420f5f553b58b85276e7af8b990846bfc92429648940"
+    },
+    {
+      "path": "public/assets/section-art/education.webp",
+      "source": "built-in imagegen · PVP 의료 도구 모티프",
+      "bytes": 85004,
+      "sha256": "075eb104c6d70bce0fd99d2a2bf7d3bc19d6d963ee2dedbdc0b772a2332b62dd"
+    },
+    {
+      "path": "public/assets/section-art/experience.webp",
+      "source": "built-in imagegen · PVP 의료 도구 모티프",
+      "bytes": 86850,
+      "sha256": "67aea990d3c4547ab54127bd9d06d08acbcc6c81ea0f733341212af0dbe145cb"
+    },
+    {
+      "path": "public/assets/section-art/provenance.json",
+      "source": "built-in imagegen · PVP 의료 도구 모티프",
+      "bytes": 10475,
+      "sha256": "13995f1e46f0f56f5c80fda32f523fdcd13785aae4a5065c96c324f241732e18"
+    },
+    {
+      "path": "public/assets/section-art/research.webp",
+      "source": "built-in imagegen · PVP 의료 도구 모티프",
+      "bytes": 150288,
+      "sha256": "1263292929c47bb5e2cf17e8ce93d2df5ae1be59ed38904c87d8edf1212aa69d"
+    },
+    {
+      "path": "public/assets/characters/300/acupuncture-poster.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 10841,
+      "sha256": "40e9ee0ab65f2793f7e37d139b1a5668037dede1639f964a430da73af7ee90c7"
+    },
+    {
+      "path": "public/assets/characters/300/acupuncture.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 129741,
+      "sha256": "7d1ba7d2b64d49451ac8d7989eac8a5804e5e8b0d2d3649a52603f52b9a0b88e"
+    },
+    {
+      "path": "public/assets/characters/300/chuna-poster.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 10548,
+      "sha256": "b41b624084f6330dfce8f9f3460059aa5d5802ca688fc67dd2b10d43caa589a5"
+    },
+    {
+      "path": "public/assets/characters/300/chuna.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 131748,
+      "sha256": "4a4657798cc6c0f67ecd124c33b950d48d5925b5df72ef156e4e77794d10a487"
+    },
+    {
+      "path": "public/assets/characters/300/examination-poster.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 8906,
+      "sha256": "09206dfa124a96915e4f6f73c5cccdfc789e95eae55450b8a2effca1800fee42"
+    },
+    {
+      "path": "public/assets/characters/300/examination.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 115999,
+      "sha256": "884b3e0557bcb1d41f44b022d036f04f88c6628ed3017d953096017238efadf0"
+    },
+    {
+      "path": "public/assets/characters/300/greet-poster.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 11529,
+      "sha256": "a0b683a36b9cca9c4fc00b8f55121bbefb57112822c166d7946145451a5cb144"
+    },
+    {
+      "path": "public/assets/characters/300/greet.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 137905,
+      "sha256": "40bed33c439ce1db5d3aebe0de676b8b7cc8640de336a32d4a9f5b19dc91911a"
+    },
+    {
+      "path": "public/assets/characters/300/motions.json",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 3829,
+      "sha256": "a19d0b4b96ac3e4ec123fa3279e86c49a6be34b2d41c5b159fce32639b0e0b43"
+    },
+    {
+      "path": "public/assets/characters/300/source-provenance.json",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 19809,
+      "sha256": "81ebc20f44987cb65efe4adadad7a861361f02bc90a11f017b594be1f6ed0283"
+    },
+    {
+      "path": "public/assets/characters/300/walk-poster.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 9143,
+      "sha256": "cccb4f6e66d9222f3373407a4faeea2b8eb6ca662b228c55eeb4596fb3b0702b"
+    },
+    {
+      "path": "public/assets/characters/300/walk.png",
+      "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
+      "bytes": 54796,
+      "sha256": "6f61ebafe7228fc52ac31457fd2f8570c1c049b6ef602bae9f6c2e9485193d36"
     }
   ]
 }

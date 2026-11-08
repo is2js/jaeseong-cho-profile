@@ -7,6 +7,7 @@
     "dev": "vite --host 127.0.0.1 --port 5192 --strictPort",
     "build": "vite build",
     "preview": "vite preview --host 127.0.0.1 --port 4192 --strictPort",
+    "test": "node --test test/*.test.js",
     "check": "node tools/check-site.js",
     "check:dist": "node tools/check-dist.js"
   },
