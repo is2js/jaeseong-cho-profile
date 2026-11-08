@@ -1,24 +1,21 @@
-.subtitle-label { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
 .subtitle-props {
   position: relative;
   display: inline-block;
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
+  flex: 0 0 32px;
+  width: 32px;
+  height: 32px;
   vertical-align: middle;
   margin: 0;
   pointer-events: none;
   user-select: none;
 }
-.subtitle-props-pair { flex-basis: 76px; width: 76px; }
-.record-block > h3 > .subtitle-props { margin: 0; font-size: inherit; letter-spacing: normal; }
-.experience-subtitle { min-width: 0; }
-.experience-subtitle > strong { min-width: 0; }
+.heading-with-motion > .subtitle-props { margin-top: .17em; }
+.about-copy h2 .subtitle-props { margin-left: .25em; font-size: inherit; letter-spacing: normal; }
 .floating-prop {
   position: absolute;
   top: 0;
   left: 0;
-  width: 34px;
+  width: 32px;
   height: auto;
   max-width: none;
   opacity: .93;
@@ -27,7 +24,6 @@
   animation: medical-prop-drift var(--prop-period, 8s) ease-in-out var(--prop-delay, 0s) infinite both;
   animation-play-state: paused;
 }
-.subtitle-props-pair > .floating-prop + .floating-prop { left: 41px; --prop-tilt: 6deg; --prop-delay: -3s; --prop-period: 9.5s; }
 @keyframes medical-prop-drift {
   0%,100% { transform: translate3d(0, 0, 0) rotate(var(--prop-tilt, -5deg)); }
   50% { transform: translate3d(var(--prop-drift, 2px), -6px, 0) rotate(calc(var(--prop-tilt, -5deg) + 2deg)); }
@@ -39,11 +35,8 @@ html[data-motion-state="on"][data-page-visible="true"] .has-entered .about-copy,
 html[data-motion-state="on"][data-page-visible="true"] .has-entered .hero-copy { animation: profile-section-arrive .65s ease both; }
 @keyframes profile-section-arrive { from { opacity: .45; transform: translate3d(0, 12px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
 @media(max-width:760px) {
-  .subtitle-label { gap: 8px; }
-  .subtitle-props { flex-basis: 29px; width: 29px; height: 29px; }
-  .subtitle-props-pair { flex-basis: 66px; width: 66px; }
-  .floating-prop { width: 29px; opacity: .9; }
-  .subtitle-props-pair > .floating-prop + .floating-prop { left: 36px; }
+  .subtitle-props { flex-basis: 26px; width: 26px; height: 26px; }
+  .floating-prop { width: 26px; opacity: .9; }
 }
 html[data-motion-state="off"] .floating-prop { animation: none; }
 @media(prefers-reduced-motion:reduce) {

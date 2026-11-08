@@ -29,23 +29,23 @@ npm run dev
 | `public/assets/suit.png` | 양복 차림의 보조 프로필 사진 |
 | `public/assets/favicon.png` | 브라우저 탭 아이콘 |
 
-## 섹션 배경과 제목 캐릭터
+## 소주제 일러스트와 제목 캐릭터
 
-`public/assets/section-art/`의 다섯 WebP는 built-in imagegen으로 만든 투명 의료 도구 일러스트입니다. 프로필의 크림·세이지 색상과 PVP 의료 스킬의 침·추나 도구 모티프를 참고했습니다. 각 파일은 해당 섹션 ID와 연결되며, `src/section-visuals.css`에서 배경 위치·투명도를 조정합니다. 생성 프롬프트와 출처·파일 해시는 같은 폴더의 provenance 파일에 기록합니다.
+장식 일러스트는 아래의 소주제 `h2` 제목에 하나씩, 총 다섯 개만 표시합니다. 학력·자격·논문·기관명 등 내부 콘텐츠에는 소품을 넣지 않습니다. 큰 생성 배경도 현재 화면에서는 표시하지 않습니다. 기존 생성 이미지와 프롬프트·출처는 `public/assets/section-art/`에 보관합니다.
 
-| 섹션 | 배경 파일 | 300 캐릭터 모션 |
+| 소주제 | 일러스트 (`floating-props/`) | 300 캐릭터 모션 |
 | --- | --- | --- |
-| 소개 | `about.webp` | 인사 `greet` |
-| 임상 경력 | `experience.webp` | 추나 `chuna` |
-| 학력·수련 | `education.webp` | 침 `acupuncture` |
-| 연구·활동 | `research.webp` | 이학적검사 `examination` |
-| 그 밖의 배움 | `additional.webp` | 걷기 `walk` |
+| 안녕하세요 | `herbal-pot.webp` | 인사 `greet` |
+| 임상에서 쌓아온 경험 | `chuna.webp` | 추나 `chuna` |
+| 배움의 바탕과 수련 | `acupuncture.webp` | 침 `acupuncture` |
+| 연구로 넓혀온 시선 | `ultrasound.webp` | 이학적검사 `examination` |
+| 그 밖의 배움과 자격 | `ginseng.webp` | 걷기 `walk` |
 
 캐릭터는 원본 PVP의 300 / SE(남동쪽) / 기본 mint 외형입니다. 기본 외형은 **민트 초록 스크럽 위에 흰 가운**을 입습니다. 프레임을 다시 그리거나 게임 원본을 수정하지 않고, 원본 프레임을 공통 비율로 축소해 독립 가로 시트로 보관했습니다. 침 동작은 원본 침 레이어를 원래 배치대로 합성합니다.
 
 `public/assets/characters/300/motions.json`에 5개 동작의 프레임 수·크기·원본 시간이 있습니다. 재생은 `src/medical-motions.js`에서 다루고, 걷기를 제외한 동작 사이에는 짧은 대기를 둡니다. 화면 밖과 숨겨진 탭에서는 재생을 멈춥니다. 브라우저의 움직임 줄이기 설정을 기본으로 따르며, 하단 **장식 움직임 켜기/끄기** 버튼으로 캐릭터·떠다니는 소품·등장 효과를 함께 조절합니다. 선택은 해당 브라우저에 저장됩니다.
 
-작은 소품 8종은 `public/assets/floating-props/`에 있습니다. PVP의 투명 의료 모티프를 재색칠·재생성 없이 자르고 축소한 이미지이며, 출처·변환·해시는 해당 폴더의 `provenance.json`에 기록합니다. 소품은 각 소제목의 `.subtitle-props` 래퍼에 직접 연결하고 그 안에서 absolute 배치합니다. 학력·자격·교육·논문·활동과 임상 기관명 옆을 기준으로 움직이며, `src/ambient-motion.css`에서 크기·부유 주기·위상차를 조정합니다. `src/ambient-motion.js`는 섹션과 탭의 표시 상태를 관찰하여 화면 밖의 소품 움직임을 정지시킵니다. 제목 옆 캐릭터 크기는 `src/section-visuals.css`의 `.heading-motion`에서 조정합니다.
+작은 소품 원본 8종은 `public/assets/floating-props/`에 보관합니다. PVP의 투명 의료 모티프를 재색칠·재생성 없이 자르고 축소한 이미지이며, 출처·변환·해시는 해당 폴더의 `provenance.json`에 기록합니다. 그중 다섯 개만 각 소주제 제목의 `.subtitle-props` 래퍼에 하나씩 연결하고 그 안에서 absolute 배치합니다. `src/ambient-motion.css`에서 크기·부유 주기·위상차를 조정합니다. `src/ambient-motion.js`는 섹션과 탭의 표시 상태를 관찰하여 화면 밖의 소품 움직임을 정지시킵니다. 제목 옆 캐릭터 크기는 `src/section-visuals.css`의 `.heading-motion`에서 조정합니다.
 
 PVP 상대 경로·리비전·파일 해시와 기술적 변환은 `public/assets/characters/300/source-provenance.json`에 있습니다. 생성 원본과 검수용 접촉 시트는 공개 사이트 파일에 포함하지 않습니다.
 
