@@ -1,5 +1,5 @@
 .illustrated-section { position: relative; isolation: isolate; }
-.illustrated-section > :not(.section-art) { position: relative; z-index: 1; }
+.illustrated-section > :not(.section-art):not(.floating-props) { position: relative; z-index: 1; }
 .section-art {
   position: absolute;
   z-index: 0;
@@ -21,10 +21,10 @@
 .heading-with-motion { display: flex; align-items: flex-start; gap: .2em; }
 .heading-motion {
   display: inline-block;
-  flex: 0 0 1.42em;
-  width: 1.42em;
-  height: 1.42em;
-  margin-top: .06em;
+  flex: 0 0 1.8em;
+  width: 1.8em;
+  height: 1.8em;
+  margin-top: -.12em;
   pointer-events: none;
   user-select: none;
   background-repeat: no-repeat;
@@ -33,7 +33,7 @@
 .heading-copy { min-width: 0; }
 .about-copy h2 > .heading-copy { font-weight: 450; color: var(--ink); }
 .about-copy h2 > .heading-copy > span { font-weight: 750; color: #54725b; }
-.motion-toggle { color: #647b5f; font-size: 10px; padding: 8px 10px; border: 1px solid #ccd4c0; border-radius: 3px; background: transparent; cursor: pointer; letter-spacing: 0; }
+.motion-toggle { color: #4c674c; font-size: 10px; padding: 8px 10px; border: 1px solid #ccd4c0; border-radius: 3px; background: transparent; cursor: pointer; letter-spacing: 0; }
 .motion-toggle:hover { background: #e9eddd; }
 .motion-toggle[hidden] { display: none; }
 @media(max-width:760px) {
@@ -41,7 +41,7 @@
   .section-art-about { right: 0; bottom: 0; }
   .section-art-additional { width: 200px; left: auto; right: 0; bottom: 15px; }
   .heading-with-motion { gap: .14em; }
-  .heading-motion { flex-basis: 1.25em; width: 1.25em; height: 1.25em; margin-top: .13em; }
+  .heading-motion { flex-basis: 1.55em; width: 1.55em; height: 1.55em; margin-top: -.03em; }
   .additional-heading h2 { font-size: 24px; }
 }
 @media print {

@@ -12,6 +12,7 @@ export async function mountMedicalMotions() {
   let saved = null;
   try { saved = localStorage.getItem(PREFERENCE_KEY); } catch { /* Browser storage may be unavailable. */ }
   let enabled = saved === 'on' || (saved !== 'off' && !preference.matches);
+  document.documentElement.dataset.motionState = enabled ? 'on' : 'off';
   const button = document.querySelector('[data-motion-toggle]');
   const players = [];
   for (const element of document.querySelectorAll('[data-medical-motion]')) {
@@ -62,7 +63,7 @@ export async function mountMedicalMotions() {
     if (!button) return;
     button.hidden = false;
     button.setAttribute('aria-pressed', String(enabled));
-    button.textContent = enabled ? '캐릭터 움직임 끄기' : '캐릭터 움직임 켜기';
+    button.textContent = enabled ? '장식 움직임 끄기' : '장식 움직임 켜기';
   }
   function showMode() {
     for (const player of players) {
@@ -75,6 +76,7 @@ export async function mountMedicalMotions() {
   }
   function setEnabled(value) {
     enabled = value;
+    document.documentElement.dataset.motionState = enabled ? 'on' : 'off';
     showMode();
     updateButton();
     if (enabled) schedule(); else stop();

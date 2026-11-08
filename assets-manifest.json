@@ -131,6 +131,60 @@
       "source": "PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션",
       "bytes": 54796,
       "sha256": "6f61ebafe7228fc52ac31457fd2f8570c1c049b6ef602bae9f6c2e9485193d36"
+    },
+    {
+      "path": "public/assets/floating-props/acupuncture.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 16136,
+      "sha256": "c6490f93f74dfb4f16be5a4169925c4e5d001e895eb6350f71ac0d2ed4efeffe"
+    },
+    {
+      "path": "public/assets/floating-props/chart.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 25854,
+      "sha256": "437dcedf18e0675efb99e2ec3a7044ca534974f62cbbaafcecbe001b86d2a8e2"
+    },
+    {
+      "path": "public/assets/floating-props/chuna.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 23936,
+      "sha256": "f39c1a89de8df13b7d572e0a4616afdaf86ce2285274cecc7af6eeb413490196"
+    },
+    {
+      "path": "public/assets/floating-props/ginseng.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 24054,
+      "sha256": "d5768133db3e4a7adc69f01dd57d0d6ea406e966c5e01570ef10ee88253e12c5"
+    },
+    {
+      "path": "public/assets/floating-props/herbal-pot.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 20266,
+      "sha256": "5b0d9f47e7a24105409070f7c70d6f4231c2e3fa7b4b5e74c42563801d210345"
+    },
+    {
+      "path": "public/assets/floating-props/moxa.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 18740,
+      "sha256": "a75d29b58e12482dcd7688d65c2c1d4e554e0278208ae16d4f486cf4c965b9b3"
+    },
+    {
+      "path": "public/assets/floating-props/needle.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 6726,
+      "sha256": "a51383c1e2cf07f8f0c028aeadd3ed7b08a0a6e606a763e8c1eb1d140e992308"
+    },
+    {
+      "path": "public/assets/floating-props/provenance.json",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 6919,
+      "sha256": "c21b55f8a29f805037c39ec771dcb5e7a750bac4f3d188372519aa52f27d3974"
+    },
+    {
+      "path": "public/assets/floating-props/ultrasound.webp",
+      "source": "PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소",
+      "bytes": 20618,
+      "sha256": "4d2774a6ae3ed631d94c77987ed016fc708263603557ab49dd635f8d192651cd"
     }
   ]
 }

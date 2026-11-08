@@ -40,6 +40,14 @@ export function checkVisualAssets(projectRoot, assetRoot = join(projectRoot, 'pu
     const bytes = readFileSync(path);
     if (bytes.subarray(0, 4).toString() !== 'RIFF' || bytes.subarray(8, 12).toString() !== 'WEBP') throw new Error(`섹션 배경 파일을 확인해 주세요: ${name}`);
   }
+  const propDirectory = join(assetRoot, 'assets/floating-props');
+  const props = JSON.parse(readFileSync(join(propDirectory, 'provenance.json'), 'utf8'));
+  if (props.assets.length !== 8 || new Set(props.assets.map(item => item.id)).size !== 8) throw new Error('떠다니는 의료 소품 8종을 확인해 주세요.');
+  for (const prop of props.assets) {
+    const bytes = readFileSync(internalPath(propDirectory, prop.file));
+    if (bytes.length !== prop.bytes || createHash('sha256').update(bytes).digest('hex') !== prop.sha256) throw new Error(`의료 소품의 크기·해시가 다릅니다: ${prop.id}`);
+    if (bytes.subarray(0, 4).toString() !== 'RIFF' || bytes.subarray(8, 12).toString() !== 'WEBP') throw new Error(`의료 소품의 WebP 형식을 확인해 주세요: ${prop.id}`);
+  }
   const assetManifest = JSON.parse(readFileSync(join(projectRoot, 'assets-manifest.json'), 'utf8'));
   for (const asset of assetManifest.assets) {
     if (!asset.path.startsWith('public/')) throw new Error('공개 자산 목록의 경로를 확인해 주세요.');
@@ -49,5 +57,6 @@ export function checkVisualAssets(projectRoot, assetRoot = join(projectRoot, 'pu
   const html = readFileSync(join(projectRoot, 'index.html'), 'utf8');
   const used = [...html.matchAll(/data-medical-motion="([^"]+)"/g)].map(match => match[1]);
   if (used.join() !== expected.join()) throw new Error('프로필 제목과 5개 의료 모션 연결 순서를 확인해 주세요.');
+  if ([...html.matchAll(/class="floating-props"/g)].length !== sections.length) throw new Error('5개 섹션에 의료 소품 레이어를 연결해 주세요.');
   return { motions: expected.length, frames: expected.reduce((sum, key) => sum + motions.actions[key].frames, 0), backgrounds: sections.length };
 }

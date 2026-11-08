@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "sourceProject": "pvp",
+  "sourceFamily": "LK 진료실 앤티크 스킬 투명 모티프",
+  "purpose": "한의사 조재성 소개 사이트의 작고 떠다니는 장식 소품",
+  "assets": [
+    {
+      "id": "needle",
+      "file": "needle.webp",
+      "label": "온침",
+      "recommendedSections": [
+        "education",
+        "about"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/026.png",
+      "sourceSha256": "27687d78ebd2907b140446b439a3bdbc944405fc6048936e800174096f5824ec",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        412,
+        70,
+        705,
+        1185
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 6726,
+      "sha256": "a51383c1e2cf07f8f0c028aeadd3ed7b08a0a6e606a763e8c1eb1d140e992308"
+    },
+    {
+      "id": "acupuncture",
+      "file": "acupuncture.webp",
+      "label": "침",
+      "recommendedSections": [
+        "education",
+        "about"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/004.png",
+      "sourceSha256": "3aaf1df81b095f068d006f1729da64c62eba429c45f201cf13a211af0dfdff99",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        167,
+        62,
+        1080,
+        1171
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 16136,
+      "sha256": "c6490f93f74dfb4f16be5a4169925c4e5d001e895eb6350f71ac0d2ed4efeffe"
+    },
+    {
+      "id": "herbal-pot",
+      "file": "herbal-pot.webp",
+      "label": "탕약",
+      "recommendedSections": [
+        "about",
+        "additional"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/019.png",
+      "sourceSha256": "a6ab2d30c308c532767d119a32904c4b2ca73d8a36320d0be3f094987e742d33",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        220,
+        56,
+        1037,
+        1125
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 20266,
+      "sha256": "5b0d9f47e7a24105409070f7c70d6f4231c2e3fa7b4b5e74c42563801d210345"
+    },
+    {
+      "id": "moxa",
+      "file": "moxa.webp",
+      "label": "뜸",
+      "recommendedSections": [
+        "about",
+        "experience"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/025.png",
+      "sourceSha256": "5483127eb5940b060b97a2b58d2979c820455a48ba4e9e0ee9f666a2f027ef83",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        361,
+        124,
+        913,
+        930
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 18740,
+      "sha256": "a75d29b58e12482dcd7688d65c2c1d4e554e0278208ae16d4f486cf4c965b9b3"
+    },
+    {
+      "id": "chuna",
+      "file": "chuna.webp",
+      "label": "추나",
+      "recommendedSections": [
+        "experience"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/007.png",
+      "sourceSha256": "f8ee368ad16ae2349b4e91713acef5d10ab087e44731168655aae07516f5e2c8",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        129,
+        39,
+        1107,
+        1174
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 23936,
+      "sha256": "f39c1a89de8df13b7d572e0a4616afdaf86ce2285274cecc7af6eeb413490196"
+    },
+    {
+      "id": "ultrasound",
+      "file": "ultrasound.webp",
+      "label": "초음파",
+      "recommendedSections": [
+        "research",
+        "experience"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/012.png",
+      "sourceSha256": "b7a79a271cdb9d31fe2eba36453911c411339396d9771d075ba05dfd1ea36cb5",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        107,
+        140,
+        1188,
+        1124
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 20618,
+      "sha256": "4d2774a6ae3ed631d94c77987ed016fc708263603557ab49dd635f8d192651cd"
+    },
+    {
+      "id": "chart",
+      "file": "chart.webp",
+      "label": "상담과 차트",
+      "recommendedSections": [
+        "research",
+        "additional"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/014.png",
+      "sourceSha256": "f9684877a956f47718de475eb49262bcf2a1e8392024647f6db73bf8fa267820",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        141,
+        240,
+        1127,
+        980
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 25854,
+      "sha256": "437dcedf18e0675efb99e2ec3a7044ca534974f62cbbaafcecbe001b86d2a8e2"
+    },
+    {
+      "id": "ginseng",
+      "file": "ginseng.webp",
+      "label": "산삼약침",
+      "recommendedSections": [
+        "additional",
+        "education"
+      ],
+      "source": "assets/rpg/skills/icons/lk-clinic/motifs/original/028.png",
+      "sourceSha256": "009f8c7e7d571026cc28a59b03d4e5a8513941acfd8e6a2275b605de2dc5f676",
+      "sourceSize": [
+        1254,
+        1254
+      ],
+      "alphaCrop": [
+        217,
+        119,
+        1043,
+        1105
+      ],
+      "outputSize": [
+        160,
+        160
+      ],
+      "processing": "Alpha bounding-box trim; uniform scale to fit 144x144; centered on transparent 160x160; lossless WebP; no recolor or object repainting",
+      "bytes": 24054,
+      "sha256": "d5768133db3e4a7adc69f01dd57d0d6ea406e966c5e01570ef10ee88253e12c5"
+    }
+  ],
+  "recommendedMapping": {
+    "about": [
+      "herbal-pot",
+      "moxa"
+    ],
+    "experience": [
+      "chuna",
+      "ultrasound"
+    ],
+    "education": [
+      "needle",
+      "acupuncture"
+    ],
+    "research": [
+      "ultrasound",
+      "chart"
+    ],
+    "additional": [
+      "ginseng",
+      "chart"
+    ]
+  }
+}

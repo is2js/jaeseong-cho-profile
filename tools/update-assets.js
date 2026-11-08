@@ -17,6 +17,7 @@ const assets = inputs.map(([name, purpose, source, processing]) => {
 for (const [folder, source] of [
   ['section-art', 'built-in imagegen · PVP 의료 도구 모티프'],
   ['characters/300', 'PVP RPG 300 기본 mint 의상 · SE 방향 원본 모션'],
+  ['floating-props', 'PVP RPG LK 진료실 투명 의료 모티프 · 단순 추출·축소'],
 ]) {
   for (const name of readdirSync(resolve(root, 'public/assets', folder))) {
     if (!/\.(png|webp|json)$/.test(name)) continue;
