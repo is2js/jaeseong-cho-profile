@@ -1,16 +1,24 @@
-.illustrated-section > .floating-props {
-  position: absolute;
-  z-index: 0;
-  inset: 0;
-  width: min(1160px, calc(100% - 112px));
-  margin-inline: auto;
+.subtitle-label { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.subtitle-props {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 34px;
+  width: 34px;
+  height: 34px;
+  vertical-align: middle;
+  margin: 0;
   pointer-events: none;
   user-select: none;
 }
-.illustrated-section.page-width > .floating-props { width: 100%; }
+.subtitle-props-pair { flex-basis: 76px; width: 76px; }
+.record-block > h3 > .subtitle-props { margin: 0; font-size: inherit; letter-spacing: normal; }
+.experience-subtitle { min-width: 0; }
+.experience-subtitle > strong { min-width: 0; }
 .floating-prop {
   position: absolute;
-  width: var(--prop-size, 54px);
+  top: 0;
+  left: 0;
+  width: 34px;
   height: auto;
   max-width: none;
   opacity: .93;
@@ -19,6 +27,7 @@
   animation: medical-prop-drift var(--prop-period, 8s) ease-in-out var(--prop-delay, 0s) infinite both;
   animation-play-state: paused;
 }
+.subtitle-props-pair > .floating-prop + .floating-prop { left: 41px; --prop-tilt: 6deg; --prop-delay: -3s; --prop-period: 9.5s; }
 @keyframes medical-prop-drift {
   0%,100% { transform: translate3d(0, 0, 0) rotate(var(--prop-tilt, -5deg)); }
   50% { transform: translate3d(var(--prop-drift, 2px), -6px, 0) rotate(calc(var(--prop-tilt, -5deg) + 2deg)); }
@@ -29,27 +38,15 @@ html[data-motion-state="on"][data-page-visible="true"] .has-entered .additional-
 html[data-motion-state="on"][data-page-visible="true"] .has-entered .about-copy,
 html[data-motion-state="on"][data-page-visible="true"] .has-entered .hero-copy { animation: profile-section-arrive .65s ease both; }
 @keyframes profile-section-arrive { from { opacity: .45; transform: translate3d(0, 12px, 0); } to { opacity: 1; transform: translate3d(0, 0, 0); } }
-.floating-about-one { left: 60%; top: 43px; --prop-size: 51px; --prop-period: 8.5s; }
-.floating-about-two { left: calc(60% + 58px); top: 55px; --prop-size: 47px; --prop-tilt: 7deg; --prop-delay: -3s; }
-.floating-experience-one { left: 49%; top: 42px; --prop-size: 53px; --prop-delay: -2s; }
-.floating-experience-two { left: calc(49% + 61px); top: 55px; --prop-size: 46px; --prop-tilt: 7deg; --prop-period: 9.5s; }
-.floating-education-one { left: 49%; top: 41px; --prop-size: 56px; --prop-delay: -4s; }
-.floating-education-two { left: calc(49% + 62px); top: 54px; --prop-size: 49px; --prop-tilt: 6deg; --prop-period: 10s; }
-.floating-research-one { left: 49%; top: 41px; --prop-size: 52px; --prop-delay: -5s; }
-.floating-research-two { left: calc(49% + 60px); top: 55px; --prop-size: 45px; --prop-tilt: 7deg; --prop-period: 9s; }
-.floating-additional-one { left: 23%; top: 29px; --prop-size: 52px; --prop-period: 9s; }
-.floating-additional-two { left: calc(23% + 58px); top: 41px; --prop-size: 47px; --prop-tilt: 6deg; --prop-delay: -4s; }
-@media(max-width:1050px) {
-  .illustrated-section > .floating-props { width: calc(100% - 80px); }
-}
 @media(max-width:760px) {
-  .illustrated-section > .floating-props { width: calc(100% - 44px); }
-  .floating-prop { width: calc(var(--prop-size, 54px) * .7); opacity: .82; }
-  .floating-about-one, .floating-experience-one, .floating-education-one, .floating-research-one, .floating-additional-one { left: auto; top: 13px; right: 72px; }
-  .floating-about-two, .floating-experience-two, .floating-education-two, .floating-research-two, .floating-additional-two { left: auto; right: 30px; top: 23px; }
+  .subtitle-label { gap: 8px; }
+  .subtitle-props { flex-basis: 29px; width: 29px; height: 29px; }
+  .subtitle-props-pair { flex-basis: 66px; width: 66px; }
+  .floating-prop { width: 29px; opacity: .9; }
+  .subtitle-props-pair > .floating-prop + .floating-prop { left: 36px; }
 }
 html[data-motion-state="off"] .floating-prop { animation: none; }
 @media(prefers-reduced-motion:reduce) {
   html:not([data-motion-state="on"]) .floating-prop { animation: none; }
 }
-@media print { .floating-props { display: none; } }
+@media print { .subtitle-props { display: none; } }

@@ -57,6 +57,6 @@ export function checkVisualAssets(projectRoot, assetRoot = join(projectRoot, 'pu
   const html = readFileSync(join(projectRoot, 'index.html'), 'utf8');
   const used = [...html.matchAll(/data-medical-motion="([^"]+)"/g)].map(match => match[1]);
   if (used.join() !== expected.join()) throw new Error('프로필 제목과 5개 의료 모션 연결 순서를 확인해 주세요.');
-  if ([...html.matchAll(/class="floating-props"/g)].length !== sections.length) throw new Error('5개 섹션에 의료 소품 레이어를 연결해 주세요.');
+  if ([...html.matchAll(/data-subtitle-props/g)].length !== 7 || /class="floating-props"/.test(html)) throw new Error('의료 소품을 각 소제목에 직접 연결해 주세요.');
   return { motions: expected.length, frames: expected.reduce((sum, key) => sum + motions.actions[key].frames, 0), backgrounds: sections.length };
 }
