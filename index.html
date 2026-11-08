@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f0e4" />
+  <meta name="description" content="한의사 조재성의 소개 페이지. 학력과 수련, 임상 경력, 연구와 활동을 소개합니다." />
+  <meta property="og:type" content="profile" />
+  <meta property="og:title" content="한의사 조재성 · 진료와 배움의 기록" />
+  <meta property="og:description" content="학력과 수련부터 임상, 연구까지. 한의사 조재성이 걸어온 길을 소개합니다." />
+  <title>한의사 조재성 · 진료와 배움의 기록</title>
+  <link rel="icon" href="./assets/favicon.png" type="image/png" sizes="192x192" />
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.css" />
+</head>
+<body x-data="profileApp">
+  <a class="skip-link" href="#main">본문으로 바로가기</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" @click="menuOpen=false" aria-label="한의사 조재성 처음으로">
+        <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="21" stroke="currentColor" stroke-width="1"/><path d="M16 33c.3-11 6-18 17-20-1 12-7 18-17 20Zm1-1 12-13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span><b>조재성</b><small>한의사 · KOREAN MEDICINE DOCTOR</small></span>
+      </a>
+      <button class="mobile-menu" type="button" @click="menuOpen=!menuOpen" :aria-expanded="menuOpen" aria-controls="main-nav" :aria-label="menuOpen ? '메뉴 닫기' : '메뉴 열기'"><span></span><span></span></button>
+      <nav id="main-nav" class="main-nav" :class="{'is-open':menuOpen}" aria-label="주 메뉴">
+        <a href="#about" @click="menuOpen=false">소개</a><a href="#experience" @click="menuOpen=false">임상 경력</a><a href="#education" @click="menuOpen=false">학력·수련</a><a href="#research" @click="menuOpen=false">연구·활동 <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero page-width" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> A RECORD OF PRACTICE & LEARNING</div>
+        <p class="hero-intro">진료와 배움의 기록</p>
+        <h1 id="hero-title"><span>한의사</span> 조재성<span class="title-dot" aria-hidden="true">.</span></h1>
+        <p class="hero-description">학력과 수련부터 임상, 연구까지.<br />한의사 조재성이 걸어온 길을 소개합니다.</p>
+        <div class="hero-actions"><a class="primary-button" href="#experience">임상 경력 살펴보기 <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="quiet-link" href="#about">프로필 소개 <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-footnote"><span>PROFILE</span><span>JO JAESEONG</span><span class="footnote-line" aria-hidden="true"></span></div>
+      </div>
+      <div class="hero-visual">
+        <span class="portrait-label">KOREAN MEDICINE</span>
+        <div class="portrait-arch" aria-hidden="true"><span class="arch-ring"></span><svg class="botanical" viewBox="0 0 200 330" fill="none"><path d="M75 310c48-66 25-164 91-258" stroke="currentColor" stroke-width="1.4"/><path d="M94 267c-42-15-59-49-60-79 41 10 66 30 60 79Zm14-68c36-10 61-38 64-71-34 9-58 30-64 71Zm4-36c-35-17-47-44-42-78 32 15 51 42 42 78Zm26-60c30-7 47-29 50-58-27 5-46 25-50 58Z" stroke="currentColor" stroke-width="1.3"/></svg></div>
+        <img class="hero-portrait" src="./assets/white-coat.png" alt="흰 가운을 입은 한의사 조재성" width="323" height="323" fetchpriority="high" />
+        <div class="portrait-caption"><span>한의사</span><strong>조재성</strong><span class="caption-line" aria-hidden="true"></span><small>CLINICAL PROFILE</small></div>
+        <span class="portrait-index" aria-hidden="true">01 / INTRODUCTION</span>
+      </div>
+    </section>
+
+    <section class="profile-highlights page-width" aria-label="주요 이력">
+      <template x-for="(item,index) in profile.highlights" :key="item.id"><div class="highlight"><span class="highlight-index" x-text="String(index+1).padStart(2,'0')"></span><div><strong x-text="item.title"></strong><p x-text="item.detail"></p></div><svg viewBox="0 0 28 28" fill="none" aria-hidden="true"><path d="m8 14 4 4 8-10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="14" r="12.5" stroke="currentColor" opacity=".35"/></svg></div></template>
+    </section>
+
+    <section id="about" class="about-section page-width section-space" aria-labelledby="about-title">
+      <div class="about-photo-wrap"><div class="about-photo"><img src="./assets/suit.png" alt="정장을 입은 조재성의 프로필 사진" width="560" height="716" loading="lazy" /></div><div class="photo-credit"><span>JO JAESEONG</span><span>PERSONAL PROFILE</span></div></div>
+      <div class="about-copy"><span class="section-kicker">01 — ABOUT</span><h2 id="about-title">안녕하세요.<br /><span>한의사 조재성입니다.</span></h2><p class="about-lead" x-text="profile.about.lead"></p><p class="body-copy" x-text="profile.about.description"></p><div class="clinical-focus" aria-label="진료 경험"><template x-for="item in profile.about.clinicalFocus" :key="item"><strong x-text="item"></strong></template></div><div class="about-notes"><span>한의학</span><i aria-hidden="true"></i><span>임상</span><i aria-hidden="true"></i><span>연구와 배움</span></div></div>
+    </section>
+
+    <section id="experience" class="experience-section section-space" aria-labelledby="experience-title">
+      <div class="page-width"><div class="section-heading"><div><span class="section-kicker">02 — CLINICAL EXPERIENCE</span><h2 id="experience-title">임상에서 쌓아온 경험</h2></div><p>한의사로서의 근무와 수련 이력입니다.</p></div>
+        <div class="timeline"><template x-for="(item,index) in profile.experience" :key="item.id"><article class="experience-row"><div class="timeline-date"><span class="timeline-point" aria-hidden="true"></span><time x-text="item.period"></time><small x-show="item.periodNote" x-text="item.periodNote"></small></div><div class="experience-body"><div class="experience-top"><h3><strong x-text="item.organization"></strong></h3><span class="role-label" x-text="item.role"></span></div><p x-show="item.description" x-text="item.description"></p><ul x-show="item.details?.length" class="experience-details"><template x-for="detail in item.details" :key="detail"><li x-text="detail"></li></template></ul></div><span class="row-index" aria-hidden="true" x-text="String(index+1).padStart(2,'0')"></span></article></template></div>
+      </div>
+    </section>
+
+    <section id="education" class="education-section page-width section-space" aria-labelledby="education-title">
+      <div class="section-heading"><div><span class="section-kicker">03 — EDUCATION & TRAINING</span><h2 id="education-title">배움의 바탕과 수련</h2></div><p>학력과 전문성을 위한 교육을 함께 정리했습니다.</p></div>
+      <div class="education-grid"><div class="record-block"><h3>학력 <span>EDUCATION</span></h3><template x-for="item in profile.education" :key="item.id"><article class="record-row"><time x-text="item.period"></time><div><strong x-show="item.medical" x-text="item.title"></strong><span class="normal-title" x-show="!item.medical" x-text="item.title"></span><p x-text="item.detail"></p><small x-show="item.note" x-text="item.note"></small></div></article></template></div><div class="record-block"><h3>자격·교육 <span>LICENSE & TRAINING</span></h3><template x-for="item in profile.medicalQualifications" :key="item.id"><article class="record-row"><time x-text="item.period"></time><div><strong x-text="item.title"></strong><p x-show="item.detail" x-text="item.detail"></p></div></article></template></div></div>
+    </section>
+
+    <section id="research" class="research-section section-space" aria-labelledby="research-title"><div class="page-width"><div class="section-heading"><div><span class="section-kicker">04 — RESEARCH & ACTIVITIES</span><h2 id="research-title">연구로 넓혀온 시선</h2></div><p>연구와 대외 활동의 기록입니다.</p></div>
+      <div class="research-layout"><div class="publication-column"><span class="minor-heading">PUBLICATION · 논문</span><template x-for="item in profile.publications" :key="item.id"><article class="paper-card"><div class="paper-meta"><span x-text="item.period"></span><span x-text="item.journal"></span></div><h3><a :href="item.url" target="_blank" rel="noopener noreferrer"><span x-text="item.title"></span><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M7 6h11v11M18 6 5 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a></h3><p x-show="item.description" x-text="item.description"></p></article></template></div><div class="activity-column"><span class="minor-heading">EXPERIENCE · 활동</span><template x-for="item in profile.activities" :key="item.id"><article class="activity-row"><time x-text="item.period"></time><div><a x-show="item.url" :href="item.url" target="_blank" rel="noopener noreferrer"><span x-text="item.title"></span><span aria-hidden="true">↗</span></a><span x-show="!item.url" x-text="item.title"></span><p x-show="item.detail" x-text="item.detail"></p></div></article></template></div></div>
+    </div></section>
+
+    <section id="additional" class="additional-section page-width section-space" aria-labelledby="additional-title"><div class="additional-heading"><span class="section-kicker">05 — ADDITIONAL BACKGROUND</span><h2 id="additional-title">그 밖의 배움과 자격</h2><p>통계·데이터와 개발 분야의 이력입니다.</p></div><div class="additional-list"><template x-for="item in profile.additional" :key="item.id"><article class="additional-row"><time x-text="item.period"></time><div><a x-show="item.url" :href="item.url" target="_blank" rel="noopener noreferrer"><span x-text="item.title"></span><span aria-hidden="true">↗</span></a><span x-show="!item.url" x-text="item.title"></span><p x-show="item.detail" x-text="item.detail"></p></div></article></template></div></section>
+    <div class="closing-note page-width"><svg viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M12 30c0-13 8-20 20-22-1 12-8 20-20 22Zm0 0 15-17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg><p>진료와 배움의 기록을<br /><span>차분히 이어갑니다.</span></p><a href="#top" class="back-top">맨 위로 <span aria-hidden="true">↑</span></a></div>
+  </main>
+
+  <footer class="site-footer"><div class="page-width"><a href="#top">한의사 조재성</a><span>© <span x-text="profile.site.copyrightYear">2026</span> JO JAESEONG</span><span>진료와 배움의 기록</span></div></footer>
+  <noscript><p class="noscript-note">자세한 이력을 보려면 브라우저의 JavaScript를 켜 주세요.</p></noscript>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>

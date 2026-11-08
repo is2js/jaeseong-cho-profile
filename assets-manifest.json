@@ -1,0 +1,28 @@
+{
+  "assets": [
+    {
+      "path": "public/assets/white-coat.png",
+      "purpose": "메인 프로필",
+      "source": "사용자 제공 가운 PNG",
+      "processing": "원본 복사",
+      "bytes": 105668,
+      "sha256": "721d0417753c061209c47a236f493a15d6d1d83c52718c06fdc6e03529395f63"
+    },
+    {
+      "path": "public/assets/suit.png",
+      "purpose": "보조 프로필",
+      "source": "사용자 제공 양복 PNG",
+      "processing": "원본 복사",
+      "bytes": 549458,
+      "sha256": "84dbfe3d06ea322d9db93d4f78507ae31bc42a0fbda57c9738a43a9010547d23"
+    },
+    {
+      "path": "public/assets/favicon.png",
+      "purpose": "브라우저 아이콘",
+      "source": "사용자 제공 가운 PNG",
+      "processing": "얼굴 영역 기술적 크롭 및 192×192 축소 · 인물 재생성 없음",
+      "bytes": 37271,
+      "sha256": "fb35a33e6be21468bfead3163bacb34c2acab2b7dc564b90dc4a0ea4d6f16be5"
+    }
+  ]
+}

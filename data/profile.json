@@ -1,0 +1,46 @@
+{
+  "site": {
+    "title": "한의사 조재성",
+    "copyrightYear": "2026",
+    "description": "학력과 수련부터 임상, 연구까지. 한의사 조재성이 걸어온 길을 소개합니다."
+  },
+  "highlights": [
+    { "id": "medicine", "title": "한의학과 졸업", "detail": "동신대학교 · 2020.02" },
+    { "id": "training", "title": "한방병원 일반수련의", "detail": "광주 청연한방병원 · 2020–2021" },
+    { "id": "clinical-training", "title": "추나·스포츠한의학 교육", "detail": "추나 정규과정 · 팀닥터 과정 수료" }
+  ],
+  "about": {
+    "lead": "한의학을 공부하고 한방병원 일반수련의 과정을 거쳐, 병원과 한의원에서 임상 경험을 쌓아왔습니다.",
+    "description": "초음파를 활용한 진료와 근골격계·자율신경계 치료 경험을 바탕으로 관련 교육을 이어왔습니다. 진료 경과를 차팅하고 다음 진료에 참고하는 기록을 중요하게 생각합니다. 바이오통계학 석사 학위와 독성 약재 감별 연구를 통해 임상 밖의 배움도 넓혀왔습니다.",
+    "clinicalFocus": ["근골격계·자율신경계 진료", "초음파 활용 경험", "추나·MPS·통사·도침", "초음파 HD 활용 경험"]
+  },
+  "experience": [
+    { "id": "baekgu", "period": "2026.01–2027.01", "periodNote": "이력서 기재 기간 · 미래 종료일 포함", "organization": "백구한의원", "role": "진료의", "description": "", "details": [] },
+    { "id": "heojun", "period": "2025.03–2025.10", "organization": "경희허준한의원", "role": "부원장", "description": "", "details": [] },
+    { "id": "plus", "period": "2023.11–2024.08", "organization": "서울 플러스 요양병원", "role": "당직의", "description": "", "details": [] },
+    { "id": "cheongyeon", "period": "2020.03–2021.02", "organization": "광주 청연한방병원", "role": "일반수련의", "description": "한방병원 인턴 · 일반수련의 과정", "details": [] }
+  ],
+  "education": [
+    { "id": "korean-medicine", "period": "2014.03–2020.02", "title": "동신대학교 한의학과 졸업", "detail": "한의학 학사", "note": "최우수 졸업 · 수석 졸업", "medical": true },
+    { "id": "biostatistics", "period": "2022.03–2024.02", "title": "방송통신대학원 바이오통계학과 석사 졸업", "detail": "바이오통계학 석사", "note": "", "medical": false }
+  ],
+  "medicalQualifications": [
+    { "id": "chuna", "period": "2021", "title": "추나 정규과정 수료", "detail": "추나학회" },
+    { "id": "team-doctor", "period": "2024", "title": "팀닥터 과정 수료", "detail": "대한스포츠한의학회" },
+    { "id": "rmsk", "period": "2025", "title": "RMSK", "detail": "이력서 표기: KRMSK" }
+  ],
+  "publications": [
+    { "id": "toxic-herbs", "period": "2019.12", "journal": "Applied Sciences · 제1저자", "title": "딥러닝 기반 독성 약재 감별 연구", "description": "Identification of Toxic Herbs Using Deep Learning with Focus on the Sinomenium Acutum, Aristolochiae Manshuriensis Caulis, Akebiae Caulis", "url": "https://www.mdpi.com/2076-3417/9/24/5456" }
+  ],
+  "activities": [
+    { "id": "snubi", "period": "2019.02–2019.03", "title": "서울대학교 의과대학 SNU BioInformatics Lab", "detail": "Internship", "url": "http://www.snubi.org/" },
+    { "id": "scholarship", "period": "2018.03–2020.02", "title": "한국지도자육성장학재단", "detail": "장학생 선발", "url": "https://www.kosffl.or.kr/" }
+  ],
+  "additional": [
+    { "id": "woowa", "period": "2021.11–2022.05", "title": "우아한테크코스 백엔드 과정 4기 선발", "detail": "프리코스 · Level 1 수료", "url": "https://github.com/is2js/woowa_precourse" },
+    { "id": "bigdata", "period": "2019.07–2019.09", "title": "Kdata 빅데이터 청년인재 과정", "detail": "빅데이터 기반의 지능정보 시스템 개발 · 고려대 과정", "url": "https://dataonair.or.kr/bigjob/" },
+    { "id": "engineer", "period": "2019.09", "title": "정보처리기사", "detail": "과학기술정보통신부" },
+    { "id": "sqld", "period": "2019.04", "title": "SQLD · SQL 개발자", "detail": "한국데이터산업진흥원" },
+    { "id": "adsp", "period": "2019.04", "title": "ADsP · 데이터분석 준전문가", "detail": "한국데이터산업진흥원" }
+  ]
+}
